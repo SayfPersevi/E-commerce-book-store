@@ -8,14 +8,12 @@ import Books from "./Pages/Books";
 function App() {
   return (
     <Router>
-
     <div className="App">
       <Nav />
       <Route path="/" exact component={Home} />
       <Route path="/books" render={() => <Books books={books} />} />
       <Footer />
     </div>
-
     </Router>
   );
 }
